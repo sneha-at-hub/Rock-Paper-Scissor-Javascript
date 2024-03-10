@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(97, 97, 189);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.choice {
+    height: 150px;
+    width: 165px;
+    background-color: rgb(97, 97, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.choice img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.choice:hover {
+    background-color: #081b31;
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    margin-left: 15px;
+}
+
+#comp-score {
+    font-size: 4rem;
+    margin-left: 40px;
+}
+
+.msg-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg {
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.end {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.rematch,
+.exit,
+.regame,
+.exitgame {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rematch:hover,
+.exit:hover,
+.regame:hover,
+.exitgame:hover {
+    background-color: #f0e400;
+    transform: scale(1.05);
+}
+
+.regame,
+.exitgame,
+.rematch,
+.exit {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #333; 
+}
+
+.regame p,
+.exitgame p,
+.rematch p,
+.exit p {
+    margin: 0;
+    padding: 0;
+}
